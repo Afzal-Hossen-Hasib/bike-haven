@@ -26,7 +26,7 @@
               colors: {
                 clifford: '#da373d',
                 'primary-color': '#331A10',
-                'secondary-color': '#F0F3DE',
+                'secondary-color': '#f2f4df',
               }
             }
           }
@@ -47,8 +47,118 @@
 <body class="font bg-secondary-color">
     
     <!-- Header Section Start  -->
-    <header>
+    <header class="container mx-auto">
+        <!-- Navigation Section Start  -->
+            <nav>
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color font-bold">Home</a></li>
+                            <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color font-bold">Shop</a></li>
+                            <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color font-bold">Home</a></li>
+                            <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color font-bold">News</a></li>
+                            <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color font-bold">Contact</a></li>
+                        </ul>
+                      </div>
+                      <img src="./images/logo/logo.png" alt="">
+                    </div>
+                    <div class="navbar-end hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Home</a></li>
+                        <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Shop</a></li>
+                        <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Home</a></li>
+                        <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color text-xl font-bold">News</a></li>
+                        <li class="pe-8"><a class="hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Contact</a></li>
+                      </ul>
 
+                      <div>
+                        <a class="btn bg-primary-color text-secondary-color hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Button</a>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
+        <!-- Navigation Section End  -->
+
+        <!-- Slider Section Start  -->
+        <div class="carousel w-full mt-28">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-evenly w-full  px-3 lg:px-0">
+              <div>
+                    <h1 class="text-xl lg:text-6xl font-bold text-primary-color">Ride-on R15 V4 <br> <span class="leading-loose">with Smile</span> </h1>
+                    <p class="text-neutral-500 pb-6">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-primary-color text-secondary-color hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Purchase</button>
+                </div>
+
+                <div>
+                    <img class="w-full" src="./images/slider/bike1.png" class="w-full" />
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-evenly w-full  px-3 lg:px-0">
+                    <div>
+                          <h1 class="text-xl lg:text-6xl font-bold text-primary-color">Ride-on R15 V4 <br> <span class="leading-loose">with Smile</span> </h1>
+                          <p class="text-neutral-500 pb-6">Amet minim mollit non deserunt ullamco 
+                              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                          <button class="btn bg-primary-color text-secondary-color hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Purchase</button>
+                      </div>
+      
+                      <div>
+                          <img class="w-full" src="./images/slider/bike2.png" class="w-full" />
+                      </div>
+                    </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-evenly w-full  px-3 lg:px-0">
+                    <div>
+                          <h1 class="text-xl lg:text-6xl font-bold text-primary-color">Ride-on R15 V4 <br> <span class="leading-loose">with Smile</span> </h1>
+                          <p class="text-neutral-500 pb-6">Amet minim mollit non deserunt ullamco 
+                              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                          <button class="btn bg-primary-color text-secondary-color hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Purchase</button>
+                      </div>
+      
+                      <div>
+                          <img class="w-full" src="./images/slider/bike3.png" class="w-full" />
+                      </div>
+                    </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-evenly w-full  px-3 lg:px-0">
+                    <div>
+                          <h1 class="text-xl lg:text-6xl font-bold text-primary-color">Ride-on R15 V4 <br> <span class="leading-loose">with Smile</span> </h1>
+                          <p class="text-neutral-500 pb-6">Amet minim mollit non deserunt ullamco 
+                              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                          <button class="btn bg-primary-color text-secondary-color hover:bg-primary-color hover:text-secondary-color text-xl font-bold">Purchase</button>
+                      </div>
+      
+                      <div>
+                          <img class="w-full" src="./images/slider/bike4.png" class="w-full" />
+                      </div>
+                    </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        <!-- Slider Section End  -->
     </header>
     <!-- Header Section End  -->
 
